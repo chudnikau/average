@@ -5,8 +5,10 @@ public class Main {
         MovingFastAverage movingAverage = new MovingFastAverage(3);
 
         System.out.println(movingAverage.next(1));
-        System.out.println(movingAverage.next(10));
+        System.out.println(movingAverage.next(101));
         System.out.println(movingAverage.next(3));
         System.out.println(movingAverage.next(5));
+
+        System.out.println(movingAverage.next(50));
     }
 }

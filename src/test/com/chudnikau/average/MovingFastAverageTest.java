@@ -68,4 +68,15 @@ public class MovingFastAverageTest {
         Assert.assertEquals(5.0, movingAverage.next(7), 0.0);
     }
 
+    @Test
+    public void whenMultipleCall2() {
+        MovingFastAverage movingAverage = new MovingFastAverage(3);
+        movingAverage.next(10);
+        movingAverage.next(100);
+        movingAverage.next(30);
+        movingAverage.next(50);
+        movingAverage.next(30);
+        Assert.assertEquals(5.0, movingAverage.next(7), 0.0);
+    }
+
 }
