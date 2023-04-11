@@ -52,6 +52,7 @@ public class MovingFastAverageTest {
     public void whenSizeIsTreeMultipleCall() {
         MovingFastAverage movingAverage = new MovingFastAverage(3);
         movingAverage.next(1);
+        movingAverage.next(16);
         movingAverage.next(10);
         movingAverage.next(3);
         Assert.assertEquals(6.0, movingAverage.next(5), 0.0);
