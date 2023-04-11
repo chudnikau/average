@@ -60,7 +60,7 @@ public class MovingFastAverageTest {
     @Test
     public void whenMultipleCall() {
         MovingFastAverage movingAverage = new MovingFastAverage(3);
-        movingAverage.next(1);
+        movingAverage.next(11);
         movingAverage.next(10);
         movingAverage.next(3);
         movingAverage.next(5);
